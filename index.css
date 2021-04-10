@@ -112,3 +112,88 @@ input {
     height: 34px;
     font-size: 16px;
 }
+
+.flex {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+.flex button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.flex button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.flex button:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.languages {
+    /* margin-top: 20px; */
+    text-align: center;
+    font-size: small;
+    display: block;
+    line-height: 28px;
+}
+
+.languages a {
+    color: #1a0dab;
+    padding: 0 3px;
+    text-decoration: none;
+}
+
+footer {
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.step1,
+.step2 {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.step2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+}
+
+.step1 p {
+    font-size: 15px;
+}
+
+.step2 a {
+    color: #70757a;
+    /* display: block; */
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
