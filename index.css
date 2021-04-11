@@ -18,7 +18,8 @@ body {
     height: 40px;
 } */
 
-nav {
+nav,
+.mobile {
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -48,6 +49,7 @@ nav a:nth-child(3) {
 nav svg.nine-dots {
     /* height: 30px;
     width: 30px; */
+    height: 24px;
     color: #5f6368;
     opacity: 1;
     fill: currentColor;
@@ -196,4 +198,55 @@ footer {
     padding-right: 30px;
     text-decoration: none;
     font-size: 14px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .mobile {
+        display: flex;
+        position: fixed;
+        background: transparent;
+        justify-content: flex-start;
+        padding-left: 18px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile svg {
+        width: 24px;
+        height: 24px;
+        color: #70757a;
+        fill: currentColor;
+        margin-right: 16px;
+    }
+    .mobile a {
+        color: #70757a;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 48px;
+        margin-right: 8px;
+        padding: 0 8px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    a.selected {
+        color: #4285f4;
+        border-bottom: 2px solid #4285f4;
+    }
+    div.input-box {
+        max-width: 95%;
+    }
+    .image img {
+        height: 56px;
+    }
+    div.image {
+        max-height: 120px;
+    }
+    .fa-keyboard-o {
+        display: none;
+    }
 }
