@@ -204,7 +204,7 @@ footer {
     display: none;
 }
 
-@media (max-width:850px) {
+@media (max-width:1000px) {
     .mobile {
         display: flex;
         position: fixed;
